@@ -89,9 +89,9 @@ public class SubGroupAPIJobConfig {
 			StepBuilderFactory stepBuilderFactory) {
 		FileMovingTasklet task = new FileMovingTasklet();
 		Resource[] inputResources = new Resource[1];
-		inputResources[0] = new FileSystemResource("c:/temp/subgroup.xlsx");
+		inputResources[0] = new FileSystemResource("/data/temp/subgroup.xlsx");
 		task.setResources(inputResources);
-		task.setMoveFilePath("c:/tmp/");
+		task.setMoveFilePath("/data/tmp/");
 		return stepBuilderFactory.get("excelSubGroupStep2").tasklet(task).build();
 	}
 
