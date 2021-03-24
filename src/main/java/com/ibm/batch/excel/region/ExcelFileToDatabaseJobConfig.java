@@ -107,7 +107,7 @@ public class ExcelFileToDatabaseJobConfig {
 			StepBuilderFactory stepBuilderFactory) {
 		FileMovingTasklet task = new FileMovingTasklet();
 		Resource[] inputResources = new Resource[1];
-		inputResources[0] = new FileSystemResource("c:/temp/students.xlsx");
+		inputResources[0] = new FileSystemResource("/data/temp/students.xlsx");
 		task.setResources(inputResources);
 		return stepBuilderFactory.get("step2").tasklet(task).build();
 	}
