@@ -14,7 +14,7 @@ import org.springframework.data.redis.listener.adapter.MessageListenerAdapter;
 public class RedisConfig {
 	private static final Logger log = LoggerFactory.getLogger(RedisConfig.class);
 	
-	/*@Bean
+	@Bean
 	RedisMessageListenerContainer container(RedisConnectionFactory connectionFactory,
 			MessageListenerAdapter listenerAdapter) {
 
@@ -38,6 +38,6 @@ public class RedisConfig {
 	@Bean
 	StringRedisTemplate template(RedisConnectionFactory connectionFactory) {
 		return new StringRedisTemplate(connectionFactory);
-	}*/
+	}
 
 }

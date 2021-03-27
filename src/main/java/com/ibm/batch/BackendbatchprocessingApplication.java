@@ -28,7 +28,7 @@ public class BackendbatchprocessingApplication {
         return new RestTemplate();
     }
 	
-	@Bean
+	/*@Bean
 	RedisMessageListenerContainer container(RedisConnectionFactory connectionFactory,
 			MessageListenerAdapter listenerAdapter) {
 
@@ -52,7 +52,7 @@ public class BackendbatchprocessingApplication {
 	@Bean
 	StringRedisTemplate template(RedisConnectionFactory connectionFactory) {
 		return new StringRedisTemplate(connectionFactory);
-	}
+	}*/
 	
 
 }
