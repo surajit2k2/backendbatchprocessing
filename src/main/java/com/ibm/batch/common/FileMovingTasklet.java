@@ -25,9 +25,9 @@ public class FileMovingTasklet implements Tasklet, InitializingBean {
 			File file = r.getFile();
 			String inputFilePath = file.getAbsolutePath();
 			if (moveFilePath.charAt(moveFilePath.length() - 1) == '/') {
-				moveFile(inputFilePath, moveFilePath + file.getName());
+				moveFile(inputFilePath, moveFilePath + file.getName() + "_" + System.currentTimeMillis());
 			} else {
-				moveFile(inputFilePath, moveFilePath + "/" + file.getName());
+				moveFile(inputFilePath, moveFilePath + "/" + file.getName() + "_" + System.currentTimeMillis());
 			}
 
 		}
