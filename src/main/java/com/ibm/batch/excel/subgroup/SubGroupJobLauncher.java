@@ -37,7 +37,7 @@ public class SubGroupJobLauncher {
 		this.jobLauncher = jobLauncher;
 	}
 
-	@Scheduled(cron = "${excel.subgroup.api.job.cron}")
+//	@Scheduled(cron = "${excel.subgroup.api.job.cron}")
 	void launchExcelFileToSubGroupAPIJob() throws JobParametersInvalidException, JobExecutionAlreadyRunningException,
 			JobRestartException, JobInstanceAlreadyCompleteException {
 		LOGGER.info("Starting excelFileToSubGroupAPI job");

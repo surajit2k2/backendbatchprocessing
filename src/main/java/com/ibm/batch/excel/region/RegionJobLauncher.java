@@ -37,7 +37,7 @@ public class RegionJobLauncher {
 		this.jobLauncher = jobLauncher;
 	}
 
-	@Scheduled(cron = "${excel.region.api.job.cron}")
+//	@Scheduled(cron = "${excel.region.api.job.cron}")
 	void launchExcelFileToRegionAPIJob() throws JobParametersInvalidException, JobExecutionAlreadyRunningException,
 			JobRestartException, JobInstanceAlreadyCompleteException {
 		LOGGER.info("Starting excelFileToAPI job");
